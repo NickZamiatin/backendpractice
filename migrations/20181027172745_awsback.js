@@ -3,8 +3,8 @@ exports.up = function(knex) {
   return knex.schema.createTable('awsback', (table)=>{
     table.increments();
     table.string('title', 264)
-    table.string('description', 264).notNullable()
-    table.text('url');
+    table.string('description', 264)
+    table.string('url')
   })
 };
 
